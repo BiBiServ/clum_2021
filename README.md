@@ -1,14 +1,13 @@
-# clum_2021
-de.NBI cloud user meeting 2021
+# de.NBI cloud user meeting 2021
 
 ## Setup of BiBiGrid
 
 ### Requirements
 
-BiBiGrid is written in Java and needs a Java Runtime Environment Version 8 or greater installed. Additionally a terminal client and an SSH client are needed.
+BiBiGrid is currently written in Java and needs a Java Runtime Environment Version 8 or greater installed. Future versions may largely be migrated to Python. Additionally a terminal client and an SSH client are needed.
 
 ### Download 
-The easiest and recommended way to use BiBiGrid is to download the [latest prebuilt binary](https://bibiserv.cebitec.uni-bielefeld.de/resources/bibigrid/bibigrid-openstack-2.2.jar).  
+The easiest and recommended way to use BiBiGrid is to download the [latest prebuilt binary](https://bibiserv.cebitec.uni-bielefeld.de/resources/bibigrid/bibigrid-openstack-current.jar).  
 
 ### Build from Source
 Alternatively, you may clone the [BiBiGrid repository](https://github.com/BiBiServ/bibigrid/) and build it yourself using Maven, which requires a Java Development Kit (>= 8) and Maven (>= 3.9) installed.
@@ -16,7 +15,7 @@ Alternatively, you may clone the [BiBiGrid repository](https://github.com/BiBiSe
 ``` BASH
 > git clone https://github.com/BiBiServ/bibigrid.git
 > cd bibigrid
-> mvn -P openstack clean package
+> mvn clean package -P openstack
 ```
 
 ### Credentials
@@ -32,13 +31,13 @@ The OpenStack RC file is a file that contains the environment variables necessar
 
 ![Pop-Up Menü oben rechts](images/popup_rc-file.png)  
 
-After downloading, open up a terminal and source the downloaded file (e.g. clum2020-openrc.sh) to get the credentials into your environment.  
+After downloading, open up a terminal and source the downloaded file (e.g. clum2021-openrc.sh) to get the credentials into your environment.  
 
 ```BASH
 > source FILE.sh
 ```
   
-_Note: You have to source the RC file in every new terminal to be able to access the OpenStack API._  
+_Note: You have to source the RC file in **every new terminal** to be able to access the OpenStack API._  
 
 _Note: Application credentials are unfortunately not an option, because Openstack4J - the library used by BiBiGrid to talk with OpenStack - does not support them._
 
