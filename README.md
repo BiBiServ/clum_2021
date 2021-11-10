@@ -29,7 +29,7 @@ The access to the de.NBI Cloud sites' web-based user interface (Openstack Dashbo
 
 The OpenStack RC file is a file that contains the environment variables necessary to run OpenStack command-line clients. The file contains project-specific environment variables and allows access to the Openstack API. After login into the OpenStack Dashboard you can download the *OpenStack RC File v3*  by clicking on your account symbol in the upper right corner.  
 
-![Pop-Up Menü oben rechts](images/popup_rc-file.png)  
+![Pop-Up Menü oben rechts](images/openstack_rc-file.webp)  
 
 After downloading, open up a terminal and source the downloaded file (e.g. clum2021-openrc.sh) to get the credentials into your environment.  
 
