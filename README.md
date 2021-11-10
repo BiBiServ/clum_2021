@@ -34,7 +34,7 @@ The OpenStack RC file is a file that contains the environment variables necessar
 After downloading, open up a terminal and source the downloaded file (e.g. clum2021-openrc.sh) to get the credentials into your environment.  
 
 ```BASH
-> source FILE.sh
+> source RC_FILE.sh
 ```
   
 _Note: You have to source the RC file in **every new terminal** to be able to access the OpenStack API._  
@@ -47,7 +47,7 @@ The prefilled configuration template below works on the de.NBI cloud site Bielef
 
 #### Template
 
-```JSON
+```YAML
 #use openstack
 mode: openstack
 
@@ -136,7 +136,7 @@ The Unix command should look like the following (depending on the JAR filename):
 > alias bibigrid="java -jar /path/to/bibigrid-*.jar"
 ```
 
-### Verify the configuration
+### Verify the Configuration
 You can simply check your configuration using:
 
 ```BASH
@@ -158,7 +158,7 @@ Now we can create the first cluster with our previously generated configuration:
 
 If no problem occurs, our cluster should be ready to work within about 15 minutes ... time for a coffee break
 
-![coffee break](images/coffee_break.jpg)
+### <p align=center>--- 7 Minute Break ☕ ---</p>
 
 It is possible to have more than one BiBiGrid cluster running simultaneously. List all running clusters (within the same OpenStack project) using:  
 
@@ -173,7 +173,7 @@ The command returns an informative list about all your running clusters.
 #### SLURM
 SLUM is an open source and scalable cluster management and job scheduling system for large and small Linux clusters. As a cluster workload manager, Slurm has three key functions. First, it allocates access to resources on the worker nodes to users for some duration of time so they can perform work. Second, it provides a framework for starting, executing, and monitoring work (normally a parallel job) on the set of allocated workers. Finally, it arbitrates contention for resources by managing a queue of pending work. (See [documentation](https://slurm.schedmd.com/) for a detailed documentation).
 
-##### User commands (partial list)
+##### User Commands (partial list)
 
 - `scontrol`: View and/or modify Slurm state
 - `sinfo   `: Reports state of Slurm partitions and nodes
@@ -182,13 +182,13 @@ SLUM is an open source and scalable cluster management and job scheduling system
 - `srun    `: Submit a job for execution
 - ...
 
-#### Directory structure
+#### Directory Structure
 BiBiGrid establishes a shared filesystem (NFS) between all cluster nodes. The master acts as an NFS server and all clients connects to it.
 
 - `/vol/spool` -> shared filesystem between all nodes.
 - `/vol/scratch` -> local disk space (ephemeral disk, if provided)
 
-## Log into the cluster via direct SSH access
+## Log into the Cluster via direct SSH access
 
 After a successful setup ...
 
@@ -212,7 +212,7 @@ bibigrid -t ther0ysuts6vo37
 
 ... you should be able to log into the master node. Run `sinfo` to check if there are 3 workers available.
 
-## Log into the cluster through Theia IDE (more comfortable)
+## Log into the Cluster through Theia IDE (more comfortable)
 
 BiBiGrid offers a more comfortable way to work with your cloud instances using the web IDE [Theia](https://theia.org).
 Let's see how this works together with BiBiGrid.
@@ -227,6 +227,7 @@ However, BiBiGrid has the possibility to open a SSH tunnel from the local machin
 bibigrid -o configuration.yml --ide <cluster id>
 ```
 
+### <p align=center>--- 7 Minute Break ☕ ---</p>
 
 ## Hello World, Hello BiBiGrid!
 
@@ -253,7 +254,7 @@ sleep 10
 - See the status of our cluster: `squeue`
 - See the output: `cat slurm-*.out`
 
-## Monitoring your cluster setup
+## Monitoring your Cluster Setup
 To get an overview about how your cluster is working, you can use *Zabbix* for monitoring.  
 Therefore it is necessary to use port-forwarding in order to access the Zabbix server through your local browser.
 
@@ -276,7 +277,7 @@ You can log in with the `admin` user and the previously set admin password.
 For a detailed documentation please visit the [Getting Started Readme](https://github.com/BiBiServ/bibigrid/blob/master/docs/README.md).
 
 
-## Manual cluster scaling (NEW)
+## Manual Cluster Scaling (NEW)
 In some cases, you may want to scale down your cluster when you don't need all the worker instances or scale up when you need more of them.
 We scale down one worker instance of our first worker batch previously configured.
 
@@ -299,7 +300,7 @@ Ansible is used by BiBiGrid to configure all launched instances. It can also be 
 
 -> [Ansible in a nutshell](https://gitlab.ub.uni-bielefeld.de/denbi/ansible-course)
 
-## Terminate a cluster
+## Terminate a Cluster
 
 To terminate a running cluster you can simply use:
 
