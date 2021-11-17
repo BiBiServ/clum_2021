@@ -43,7 +43,7 @@ _Note: Application credentials are unfortunately not an option, because Openstac
 
 ### Configuration
 
-The prefilled configuration template below works on the de.NBI cloud site Bielefeld (verified on 2020-10-05). You have to adjust many of the values when trying this on other de.NBI cloud sites.
+The prefilled configuration template below works on the de.NBI cloud site Bielefeld (verified on 2021-11-17). You have to adjust many of the values when trying this on other de.NBI cloud sites.
 
 #### Template
 
@@ -319,8 +319,8 @@ Another option is to terminate all your clusters using your username:
 ```bash
 bibigrid -o configuration.yml -t <user>
 ```
-
-Now you should be well prepared to start and manage your BiBiGrid cluster!
+  
+Now you should be well prepared to start and manage your BiBiGrid cluster!  
 For further information as well as recent updates visit the [BiBiGrid repository](https://github.com/BiBiServ/bibigrid/).
 
 Please take time to fill out the [Cloud-Survey](https://cloud.denbi.de/survey/index.php/346598), if not already done. 
