@@ -23,7 +23,7 @@ BiBiGrid needs access to the Openstack API to work properly.
 
 #### Get API Access 
 
-The access to the de.NBI Cloud sites' web-based user interface (Openstack Dashboard) is realized by an SSO mechanism using Elixir AAI. **An API password is not set by default.**
+The access to the de.NBI Cloud sites' web-based user interface (![Openstack Dashboard](https://openstack.cebitec.uni-bielefeld.de/)) is realized by an SSO mechanism using Elixir AAI. **An API password is not set by default.**
 
 #### Download OpenStack RC file 
 
@@ -31,7 +31,7 @@ The OpenStack RC file is a file that contains the environment variables necessar
 
 ![Pop-Up Menü oben rechts](images/openstack_rc-file.webp)  
 
-After downloading, open up a terminal and source the downloaded file (e.g. clum2021-openrc.sh) to get the credentials into your environment.  
+After downloading, open up a terminal and source the downloaded file (e.g. clum21bibigrid-openrc.sh) to get the credentials into your environment.  
 
 ```BASH
 > source RC_FILE.sh
