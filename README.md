@@ -45,7 +45,7 @@ _Note: Application credentials are unfortunately not an option, because Openstac
 
 The prefilled configuration template below works on the de.NBI cloud site Bielefeld (verified on 2021-11-17). You have to adjust many of the values when trying this on other de.NBI cloud sites.
 
-#### Template
+#### Template (e.g. *configuration.yml*)
 
 ```YAML
 #use openstack
