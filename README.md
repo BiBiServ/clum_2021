@@ -323,4 +323,4 @@ bibigrid -o configuration.yml -t <user>
 Now you should be well prepared to start and manage your BiBiGrid cluster!
 For further information as well as recent updates visit the [BiBiGrid repository](https://github.com/BiBiServ/bibigrid/).
 
-Please take time to fill out the [https://cloud.denbi.de/survey/index.php/346598](Cloud-Survey), if not already done. 
+Please take time to fill out the [Cloud-Survey](https://cloud.denbi.de/survey/index.php/346598), if not already done. 
