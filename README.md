@@ -57,17 +57,17 @@ region: Bielefeld
 availabilityZone: default                         
 
 #Network
-subnet: XXXXXX                                     # REPLACE
+subnet: clum21bibigrid_extern
 
 # Master instance
 masterInstance:
   type: de.NBI default + ephemeral
-  image: e4ff922e-7681-411c-aa9b-6784390a904e
+  image: e0432b2e-7e70-472f-b1cf-8d8af62ecd72
   
 # Worker instances
 workerInstances:
   - type: de.NBI small + ephemeral 
-    image: e4ff922e-7681-411c-aa9b-6784390a904e
+    image: e0432b2e-7e70-472f-b1cf-8d8af62ecd72
     count: 3 
 useMasterWithPublicIp: yes
 useMasterAsCompute: no
