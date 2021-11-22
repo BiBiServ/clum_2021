@@ -1,5 +1,7 @@
 # de.NBI cloud user meeting 2021
 
+[Slides for this session](https://raw.githubusercontent.com/BiBiServ/clum_2021/main/BiBiGrid%20Clum2021.pdf)
+
 ## Setup of BiBiGrid
 
 ### Requirements
@@ -10,7 +12,7 @@ BiBiGrid is currently written in Java and needs a Java Runtime Environment Versi
 The easiest and recommended way to use BiBiGrid is to download the [latest prebuilt binary](https://bibiserv.cebitec.uni-bielefeld.de/resources/bibigrid/bibigrid-openstack-current.jar).  
 
 ### Build from Source
-Alternatively, you may clone the [BiBiGrid repository](https://github.com/BiBiServ/bibigrid/) and build it yourself using Maven, which requires a Java Development Kit (>= 8) and Maven (>= 3.9) installed.
+Alternatively, you may clone the [BiBiGrid repository](https://github.com/BiBiServ/bibigrid/) and build it yourself using Maven, which requires a Java Development Kit (>= 11) and Maven (>= 3.9) installed.
 
 ``` BASH
 > git clone https://github.com/BiBiServ/bibigrid.git
